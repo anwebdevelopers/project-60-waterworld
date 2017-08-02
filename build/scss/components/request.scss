@@ -1,0 +1,67 @@
+.request {
+    margin: 7rem 0 0 0;
+}
+.request__container {
+    @extend .container;
+}
+.request__box {
+    padding: 1rem 0;
+    background-color: $blue;
+    display: flex;
+}
+.request__form {
+    flex: 1 1 auto;
+    padding: 0 2rem;
+
+    color: #fff;
+    text-align: center;
+}
+.request__title {
+    margin: 0;
+    font-size: 3.6rem;
+    font-weight: 600;
+}
+.request__text {
+    margin: 0;
+}
+.request__field {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+    outline: none;
+    box-shadow: none;
+    border-radius: 0;
+
+    display: inline-block;
+    vertical-align: top;
+    max-width: 32rem;
+    width: 100%;
+    height: 3.4rem;
+    margin: 1rem 1rem 0 1rem;
+    padding: .5rem 1.5rem;
+    border: 1px solid #b3e7fc;
+    background-color: #fff;
+    font-size: 1.6rem;
+    font-family: inherit;
+    text-align: inherit;
+    transition: all .5s ease;
+    &:hover, &:focus {
+        border-color: $blue;
+    }
+}
+.request__submit {
+    @extend .button;
+    max-width: 32rem;
+    width: 100%;
+    margin: 1rem 1rem 0 1rem;
+}
+.request__img {
+    margin: -6rem 0 -1rem 0;
+    flex: 0 1 auto;
+    align-self: flex-end;
+    img {
+        display: block;
+        max-width: 100%;
+    }
+}

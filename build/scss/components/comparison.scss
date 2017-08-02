@@ -1,0 +1,25 @@
+.comparison {
+    margin: 3rem 0 0 0;
+}
+.comparison__container {
+    @extend .container;
+}
+.comparison__title {
+    @extend .title;
+}
+.comparison__box {
+    display: flex;
+    flex-wrap: wrap;
+}
+.comparison__item {
+    flex: 0 0 auto;
+    width: 45%;
+    margin: 4rem 2.5% 0 2.5%;
+}
+.comparison__item-img {
+    margin: 0;
+    text-align: center;
+    img {
+        max-width: 100%;
+    }
+}
