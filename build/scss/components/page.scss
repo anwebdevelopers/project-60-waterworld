@@ -1,0 +1,12 @@
+.page {
+    margin: 3rem 0 0 0;
+}
+.page__container {
+    @extend .container;
+}
+.page__title {
+    @extend .title;
+}
+.page__content {
+    @extend .content;
+}

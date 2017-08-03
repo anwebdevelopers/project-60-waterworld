@@ -4,30 +4,9 @@
 .about__container {
     @extend .container;
 }
-.about__box {
-    display: flex;
-}
-.about__img {
-    margin: 0;
-    flex: 0 0 auto;
-    img {
-        max-width: 100%;
-        border-radius: 50%;
-    }
-}
-.about__title {
-    @extend .title;
-}
+
 .about__content {
-    flex: 1 1 auto;
-    margin: 0 0 0 8rem;
-    > * {
-        margin-top: 2rem;
-        margin-bottom: 0;
-        &:first-child {
-            margin-top: 0;
-        }
-    }
+    @extend .content;
 }
 .about__list {
     margin: 3rem 0 0 0;

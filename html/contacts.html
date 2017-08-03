@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>ООО "Домстрой" - дренаж участка, дренаж фундамента, ливневая канализация, точечный дренаж.</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> -->
+
+	<meta property="og:image" content="path/to/image.jpg">
+
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+	<link rel="stylesheet" href="css/main.min.css">
+
+</head>
+
+<body>
+
+	<header class="header">
+		<div class="heade__top">
+			<div class="header__top-container">
+				<figure class="header__logo">
+					<img src="img/logo.png" alt="">
+				</figure>
+				<ul class="header__links">
+					<li><a href="#">Дренаж фундамента</a></li>
+					<li><a href="#">Дренаж участка</a></li>
+					<li><a href="#">ОТМОСТКИ</a></li>
+				</ul>
+				<div class="header__contacts">
+					<div class="header__contacts-time">8:00 - 22:00</div>
+					<a href="tel:+74950000000" class="header__contacts-phone">+7 (495) 000-00-00</a>
+					<a href="#" class="header__contacts-button">ЗАКАЗАТЬ ЗВОНОК</a>
+				</div>
+			</div>
+		</div>
+		<nav class="header__nav">
+			<ul class="header__nav-container">
+				<li><a href="#">ДРЕНАЖ ФУНДАМЕНТА</a></li>
+				<li><a href="#">ДРЕНАЖ УЧАСТКА</a></li>
+				<li><a href="#">ОТМОСТКИ</a></li>
+				<li><a href="#">КОНТАКТЫ</a></li>
+			</ul>
+		</nav>
+		<div class="header__banner">
+			<div class="header__banner-container">
+				<div class="stock">
+					<figure class="stock__img">
+						<img src="img/img-stock.png" alt="">
+					</figure>
+					<form class="stock__form">
+						<p class="stock__title"><strong>АКЦИЯ!</strong> <br>АВАРИЙНАЯ <br>СИГНАЛИЗАЦИЯ <br>В ПОДАРОК!</p>
+						<input type="text" class="stock__field" placeholder="Введите Ваш телефон">
+						<button type="submit" class="stock__submit">УЗНАТЬ ПОДРОБНЕЕ</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<section class="page">
+		<div class="page__container">
+			<h1 class="page__title">КОНТАКТЫ</h1>
+			<div class="page__content">
+				<p><span style="font-size:30px; font-weight:500;">+7 (495) 000-00-00</span> <br>
+				info@vodniymir.ru <br>
+				г. Москва, ул. Привольная, д. 2 кор. 5, этаж 2, помещение IX <br><br>
+				Телефоны по направлениям: <br>
+				Северо-Запад: 888888888 <br>
+				Северо-Восток: 888888888 <br>
+				Юго-Восток: 88888888 <br>
+				Юго-Запад: 888888888 <br>
+				</p>
+			</div>
+			<div class="map" id="map"></div>
+		</div>
+	</section>
+
+	<footer class="footer">
+		<div class="footer__container">
+			<div class="footer__box">
+				<div class="footer__logowrap">
+					<figure class="footer__logo">
+						<img src="img/logo-footer.png" alt="">
+					</figure>
+					<ul class="footer__links">
+						<li><a href="#">Дренаж фундамента</a></li>
+						<li><a href="#">Дренаж участка</a></li>
+						<li><a href="#">ОТМОСТКИ</a></li>
+					</ul>
+				</div>
+				<nav class="footer__nav">
+					<ul>
+						<li><a href="#">SOFTROCK</a></li>
+						<li><a href="#">ДРЕНАЖ ФУНДАМЕНТА</a></li>
+						<li><a href="#">ДРЕНАЖ УЧАСТКА</a></li>
+						<li><a href="#">ОТМОСТКИ</a></li>
+						<li><a href="#">ВЫПОЛНЕННЫЕ ОБЪЕКТЫ</a></li>
+						<li><a href="#">КОНТАКТЫ</a></li>
+					</ul>
+				</nav>
+				<form class="footer__callback">
+					<p class="footer__callback-title">У вас есть вопросы? <br>Оставьте свой номер телефона и мы Вам перезвоним.</p>
+					<input type="text" class="footer__callback-field" placeholder="Введите Ваш телефон">
+					<button type="submit" class="footer__callback-submit">ОТПРАВИТЬ</button>
+				</form>
+				<div class="footer__contacts">
+					<a href="tel:+74950000000" class="footer__contacts-number">+7 (495) 000-00-00</a>
+					<a href="mailto:info@vodniymir.ru" class="footer__contacts-email">info@vodniymir.ru</a>
+					<address class="footer__contacts-address">г. Москва, ул. Привольная, д. № 2 кор. 5, этаж 2, помещение IX</address>
+				</div>
+			</div>
+			<p class="footer__copy">2008–2017 © ООО "Домстрой" - дренаж участка, дренаж фундамента, ливневая канализация, точечный дренаж.</p>
+		</div>
+	</footer>
+
+	<!-- Load Scripts Start -->
+	<script type="text/javascript">
+		function initMap(ymaps) {
+			var myMap;
+			myMap = new ymaps.Map('map', {
+				center: [55.703408, 37.839744],
+				zoom: 16,
+				controls: ['zoomControl'],
+				behaviors: ["drag", "dblClickZoom", "rightMouseButtonMagnifier", "multiTouch"]
+			}, {
+				searchControlProvider: 'yandex#search'
+			}),
+			myMap.geoObjects.add(new ymaps.Placemark([55.703408, 37.839744], {
+				iconCaption: 'ул. Привольная, д. 2 кор. 5'
+			},{
+				preset: 'islands#blueCircleDotIconWithCaption'
+			}));
+		}
+	</script>
+	<script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU&onload=initMap" defer></script>
+	<!-- Load Scripts End -->
+
+</body>
+</html>
